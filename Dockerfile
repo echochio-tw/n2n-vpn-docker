@@ -12,8 +12,8 @@ RUN buildDeps=" \
         && apk add $buildDeps \
         && mkdir -p /usr/src \
         && cd /usr/src \
-        && git clone https://github.com/ntop/n2n \
-        && cd n2n \
+        && git clone https://github.com/meyerd/n2n \
+        && cd n2n/n2n_v2 \
         && cmake . \
         && make install \
         && cd / \
