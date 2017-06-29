@@ -8,8 +8,10 @@
 
 # start edge
 
-//node 1
+//node IP 10.9.9.1
+
      docker run -d --privileged --net=host --name n2n_edge echochio/n2n /usr/local/sbin/edge -d n2n0 -a 10.9.9.1 -c mypbxnet -k mypass -l 192.168.0.70:53 -f
     
-//node 2
-      docker run -d --privileged --net=host --name n2n_edge echochio/n2n /usr/local/sbin/edge -d n2n0 -a 10.9.9.1 -c mypbxnet -k mypass -l 192.168.0.70:53 -f
+//node IP 10.9.9.2
+
+      docker run -d --privileged --net=host --name n2n_edge echochio/n2n /usr/local/sbin/edge -d n2n0 -a 10.9.9.2 -c mypbxnet -k mypass -l 192.168.0.70:53 -f
