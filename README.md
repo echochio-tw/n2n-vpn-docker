@@ -21,3 +21,4 @@ docker run --privileged --net=host --rm -ti echochio/n2n edge -d n2n0 -a 10.9.9.
 docker run -d --privileged --net=host --name n2n_edge pahud/n2n-docker edge -d n2n0 -a 10.9.9.1 -c mypbxnet -k mypass -l <supernode_host>:<port> -f
 
 
+...
