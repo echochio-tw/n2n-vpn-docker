@@ -16,4 +16,4 @@
     
 //node IP 10.9.9.2
 
-      docker run -d --privileged --net=host --name n2n_edge echochio/n2n /usr/local/sbin/edge -d n2n0 -a 10.9.9.2 -c mypbxnet -k mypass -l 192.168.0.70:53 -f
+      docker run -it --privileged --net=host --name n2n_edge echochio/n2n /usr/local/sbin/edge -d n2n0 -a 10.9.9.2 -c mypbxnet -k mypass -l 192.168.0.70:53 -f
