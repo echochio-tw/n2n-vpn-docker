@@ -13,7 +13,7 @@ RUN buildDeps=" \
         && mkdir -p /usr/src \
         && cd /usr/src \
         && git clone https://github.com/ntop/n2n \
-        && cd n2n/n2n_v2 \
+        && cd n2n \
         && cmake . \
         && make install \
         && cd / \
